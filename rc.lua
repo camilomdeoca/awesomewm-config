@@ -12,7 +12,9 @@ local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
+local _dbus = dbus; dbus = nil
 local naughty = require("naughty")
+dbus = _dbus
 -- Declarative object management
 local ruled = require("ruled")
 local menubar = require("menubar")
